@@ -3,8 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objects as go
+
 st.header('kairung')
 #st.image("./pic/kairung.jpg")
 col1, col2, col3 = st.columns(3)
@@ -51,7 +50,7 @@ sp_len = st.number_input("กรุณาเลือกข้อมูล sepal
 sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
 if st.button("ทำนายผล"):
 #st.write("ทำนาย")
-dt = pd.read_csv("./data/iris.csv")
+dt = pd.read_csv("./data/iris-3.csv")
 X = dt.drop('variety', axis=1)
 y = dt.variety
 Knn_model = KNeighborsClassifier(n_neighbors=3)
