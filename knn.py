@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.header('Phanuwat')
+st.header('Information Technology')
 st.image("./img/20.jpg")
 col1, col2, col3 = st.columns(3)
 with col1:
